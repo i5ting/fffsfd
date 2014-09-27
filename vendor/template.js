@@ -528,9 +528,11 @@ function init_questions(){
 
 	var url = 'http://2.dabuu.sinaapp.com/getquestions.php?aid=18e6255ebbf2d72f64625c63f29c600d&uid=o123127fsdouvpz'
 
+  alert(url)
 	$.getJSON(url,function(data){
+      alert(data)
 			var questions = data.data.questions;
-			console.log(questions);
+			alert(questions);
 
 
 			if(data.data.is_ad){
